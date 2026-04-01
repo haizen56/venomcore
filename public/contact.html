@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Venom Core</title>
+  <meta name="description" content="Get in touch with the Venom Core team. Whether you have a project in mind, a career question, or just want to say hello — we're listening." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    #form-success {
+      display: none;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+      background: rgba(0,255,156,0.08);
+      border: 1px solid var(--border-glow);
+      border-radius: var(--radius);
+      color: var(--accent-green);
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="logo-icon">VC</span>
+      Venom&nbsp;<span>Core</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html" class="active">Contact</a></li>
+      <li><a href="/contact.html" class="nav-cta">Work With Us</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile" id="mobile-nav">
+  <button class="nav-mobile-close" id="mobile-close">&times;</button>
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/contact.html">Contact</a>
+  <a href="/privacy.html">Privacy</a>
+</div>
+
+<!-- ── PAGE HERO ─────────────────────────────────────────────────────────── -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="page-hero-tag fade-in">Get in Touch</div>
+    <h1 class="page-hero-title fade-in fade-in-delay-1">Let's <span style="color:var(--accent-green)">Talk</span></h1>
+    <p class="page-hero-sub fade-in fade-in-delay-2">Have a project idea, a career question, or just want to geek out about games? We're always listening.</p>
+  </div>
+</div>
+
+<!-- ── CONTACT MAIN ───────────────────────────────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: info card -->
+      <div class="fade-in">
+        <div class="contact-info-card">
+          <h3>Studio Info</h3>
+          <p>Reach out through the form or use any of the channels below. We aim to respond within 2 business days.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="contact-item-label">Location</div>
+                <div class="contact-item-value">1420 Neon Ridge, Portland, OR 97201</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">✉️</div>
+              <div>
+                <div class="contact-item-label">General</div>
+                <div class="contact-item-value">hello@venomcore.studio</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">🤝</div>
+              <div>
+                <div class="contact-item-label">Partnerships</div>
+                <div class="contact-item-value">partners@venomcore.studio</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📰</div>
+              <div>
+                <div class="contact-item-label">Press</div>
+                <div class="contact-item-value">press@venomcore.studio</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-divider"></div>
+
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:1rem;letter-spacing:0.1em;text-transform:uppercase;font-family:var(--font-heading)">Follow Us</p>
+          <div class="social-links">
+            <a href="#" class="social-link">𝕏 Twitter</a>
+            <a href="#" class="social-link">⬡ Discord</a>
+            <a href="#" class="social-link">▶ YouTube</a>
+            <a href="#" class="social-link">◎ Instagram</a>
+          </div>
+        </div>
+
+        <!-- FAQ accordion style -->
+        <div style="margin-top:2rem;background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:2rem">
+          <h3 style="font-size:1.1rem;margin-bottom:1.2rem">Common Questions</h3>
+          <div style="display:flex;flex-direction:column;gap:1rem">
+            <details style="cursor:pointer">
+              <summary style="font-family:var(--font-heading);font-size:0.9rem;letter-spacing:0.05em;color:var(--text-secondary);list-style:none;display:flex;justify-content:space-between;align-items:center;padding-bottom:0.5rem;border-bottom:1px solid var(--border-subtle)">
+                Do you take on co-development work?
+                <span style="color:var(--accent-green)">+</span>
+              </summary>
+              <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin-top:0.8rem">Yes — we work with external studios on both short-term reinforcement and long-term co-development engagements. Use the form to describe your project.</p>
+            </details>
+            <details style="cursor:pointer">
+              <summary style="font-family:var(--font-heading);font-size:0.9rem;letter-spacing:0.05em;color:var(--text-secondary);list-style:none;display:flex;justify-content:space-between;align-items:center;padding-bottom:0.5rem;border-bottom:1px solid var(--border-subtle)">
+                Are you hiring?
+                <span style="color:var(--accent-green)">+</span>
+              </summary>
+              <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin-top:0.8rem">We have open roles for senior engineers, narrative designers, and 3D environment artists. Send your portfolio to hello@venomcore.studio.</p>
+            </details>
+            <details style="cursor:pointer">
+              <summary style="font-family:var(--font-heading);font-size:0.9rem;letter-spacing:0.05em;color:var(--text-secondary);list-style:none;display:flex;justify-content:space-between;align-items:center;padding-bottom:0.5rem;border-bottom:1px solid var(--border-subtle)">
+                How do I request press access?
+                <span style="color:var(--accent-green)">+</span>
+              </summary>
+              <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin-top:0.8rem">Email press@venomcore.studio with your outlet name and publication. We'll send a press kit and game keys within 48 hours for verified media.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="fade-in fade-in-delay-1">
+        <div class="contact-form-wrap">
+          <h3>Send a Message</h3>
+          <p>Tell us what you're working on. The more detail, the better.</p>
+
+          <div id="form-success" role="alert">
+            <span aria-hidden="true">✓</span> Message sent! We'll be in touch within 48 hours.
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name">First Name</label>
+                <input type="text" id="f-name" name="first_name" placeholder="Marcus" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="f-lastname">Last Name</label>
+                <input type="text" id="f-lastname" name="last_name" placeholder="Kael" required autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="f-company">Company / Studio</label>
+              <input type="text" id="f-company" name="company" placeholder="Your studio name (optional)" autocomplete="organization" />
+            </div>
+            <div class="form-group">
+              <label for="f-inquiry">Type of Inquiry</label>
+              <select id="f-inquiry" name="inquiry_type">
+                <option value="">— Select one —</option>
+                <option value="project">New Project / Co-Development</option>
+                <option value="careers">Careers</option>
+                <option value="press">Press / Media</option>
+                <option value="partnership">Partnership</option>
+                <option value="serious">Serious Games</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" placeholder="Tell us about your project, idea, or question…" required></textarea>
+            </div>
+            <div class="form-group" style="display:flex;align-items:flex-start;gap:0.75rem;margin-top:0.5rem">
+              <input type="checkbox" id="f-consent" name="consent" style="width:16px;height:16px;flex-shrink:0;margin-top:3px;accent-color:var(--accent-green)" required />
+              <label for="f-consent" style="font-size:0.8rem;color:var(--text-muted);text-transform:none;letter-spacing:0;font-family:var(--font-body)">
+                I agree to the <a href="/privacy.html">Privacy Policy</a> and consent to Venom Core storing my submitted information to respond to my inquiry.
+              </label>
+            </div>
+            <div class="form-submit-row">
+              <span class="form-note">★ We respond within 2 business days</span>
+              <button type="submit" class="btn btn-primary">Send Message →</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map placeholder -->
+    <div class="map-placeholder fade-in" role="img" aria-label="Studio location map placeholder">
+      <div class="map-pin" aria-hidden="true">📍</div>
+      <span>1420 Neon Ridge, Portland, OR — Map coming soon</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo"><span class="logo-icon">VC</span>Venom&nbsp;<span>Core</span></a>
+        <p>Award-winning game studio crafting immersive worlds and unforgettable stories since 2018.</p>
+      </div>
+      <div class="footer-col"><h4>Studio</h4><ul>
+        <li><a href="/">Home</a></li><li><a href="/about.html">About</a></li>
+        <li><a href="/#games">Our Games</a></li><li><a href="/#services">Services</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul>
+        <li><a href="/contact.html">Contact Us</a></li><li><a href="/contact.html">Careers</a></li>
+        <li><a href="/contact.html">Press Kit</a></li><li><a href="/contact.html">Partnerships</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/privacy.html">Cookie Policy</a></li>
+        <li><a href="/privacy.html">Terms of Use</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Venom Core Studio. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="Discord">⬡</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Instagram">◎</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

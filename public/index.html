@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venom Core — We Make Games</title>
+  <meta name="description" content="Venom Core is an award-winning game studio pushing the boundaries of narrative and serious games." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────────────────────────────────────────── -->
+<nav class="navbar" id="navbar" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="logo-icon">VC</span>
+      Venom&nbsp;<span>Core</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/contact.html" class="nav-cta">Work With Us</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay nav -->
+<div class="nav-mobile" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile menu">
+  <button class="nav-mobile-close" id="mobile-close" aria-label="Close menu">&times;</button>
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/contact.html">Contact</a>
+  <a href="/privacy.html">Privacy</a>
+</div>
+
+<!-- ── HERO ───────────────────────────────────────────────────────────────── -->
+<section class="hero" aria-labelledby="hero-heading">
+  <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-bg hero-bg-parallax" aria-hidden="true"></div>
+
+  <!-- Decorative dragon silhouette -->
+  <div class="hero-dragon" aria-hidden="true">
+    <svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <!-- Stylised dragon shape -->
+      <path d="M300 60 C220 80 140 120 100 200 C60 280 80 360 140 400 C180 424 230 420 280 410 C260 390 250 360 270 340 C230 320 200 280 220 240 C240 200 290 210 310 230 C320 210 350 200 380 220 C400 240 390 280 360 300 C380 320 390 350 380 380 C420 370 460 350 490 310 C540 250 530 160 480 120 C450 98 410 80 370 68 C350 62 325 58 300 60 Z" fill="currentColor" opacity="0.6"/>
+      <path d="M310 230 C330 250 340 270 330 290 C320 310 290 316 270 300 C260 292 258 278 266 266 C274 254 292 244 310 230 Z" fill="currentColor" opacity="0.8"/>
+      <!-- Wings -->
+      <path d="M180 200 C140 160 90 140 50 160 C30 170 20 190 40 210 C70 200 110 200 140 220 Z" fill="currentColor" opacity="0.4"/>
+      <path d="M420 200 C460 160 510 140 550 160 C570 170 580 190 560 210 C530 200 490 200 460 220 Z" fill="currentColor" opacity="0.4"/>
+      <!-- Tail -->
+      <path d="M180 380 C160 410 150 440 170 460 C185 474 200 460 195 445 C205 450 215 435 200 422 C215 420 218 405 205 398 Z" fill="currentColor" opacity="0.5"/>
+      <!-- Fire breath -->
+      <ellipse cx="100" cy="420" rx="60" ry="18" fill="#ff6b2b" opacity="0.25"/>
+      <ellipse cx="85" cy="430" rx="40" ry="12" fill="#ffaa00" opacity="0.18"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow fade-in">
+        <div class="hero-eyebrow-line"></div>
+        <span>Est. 2018 · Award-winning studio</span>
+      </div>
+      <h1 class="hero-heading fade-in fade-in-delay-1" id="hero-heading">
+        WE MAKE
+        <span class="highlight">GAMES</span>
+      </h1>
+      <p class="hero-sub fade-in fade-in-delay-2">
+        An award-winning studio pushing the boundaries of narrative and serious games. We craft worlds that challenge, inspire, and endure.
+      </p>
+      <div class="hero-cta-group fade-in fade-in-delay-3">
+        <a href="#games" class="btn btn-primary">Our Projects</a>
+        <a href="/about.html" class="btn btn-outline">Our Story</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">Scroll</div>
+</section>
+
+<!-- ── STATS BAR ──────────────────────────────────────────────────────────── -->
+<div class="stats-bar" aria-label="Studio achievements">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <div class="stat-number" data-count="12" data-suffix="">12</div>
+        <div class="stat-label">Games Released</div>
+      </div>
+      <div class="stat-item fade-in fade-in-delay-1">
+        <div class="stat-number" data-count="47" data-suffix="+">47+</div>
+        <div class="stat-label">Awards Won</div>
+      </div>
+      <div class="stat-item fade-in fade-in-delay-2">
+        <div class="stat-number" data-count="8" data-suffix="M+">8M+</div>
+        <div class="stat-label">Players Worldwide</div>
+      </div>
+      <div class="stat-item fade-in fade-in-delay-3">
+        <div class="stat-number" data-count="7" data-suffix="">7</div>
+        <div class="stat-label">Years of Craft</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FEATURED GAMES ─────────────────────────────────────────────────────── -->
+<section id="games" aria-labelledby="games-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Featured</span>
+      <h2 class="section-title" id="games-heading">Our <span>Games</span></h2>
+      <p class="section-subtitle">Immersive worlds built with passion, precision, and cinematic vision.</p>
+    </div>
+    <div class="games-grid">
+
+      <article class="game-card fade-in">
+        <div class="game-card-thumb">
+          <div class="game-card-thumb-inner thumb-abyss">
+            <div class="thumb-art"></div>
+            <!-- SVG art overlay -->
+            <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.35" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+              <circle cx="200" cy="120" r="80" stroke="#00ff9c" stroke-width="0.8" opacity="0.4"/>
+              <circle cx="200" cy="120" r="55" stroke="#00ff9c" stroke-width="0.5" opacity="0.3"/>
+              <path d="M120 120 L280 120 M200 40 L200 200" stroke="#00ff9c" stroke-width="0.5" opacity="0.3"/>
+              <polygon points="200,60 230,120 200,140 170,120" stroke="#00ff9c" stroke-width="1" fill="rgba(0,255,156,0.06)"/>
+              <circle cx="200" cy="120" r="12" fill="rgba(0,255,156,0.2)" stroke="#00ff9c" stroke-width="1.5"/>
+            </svg>
+            <div class="thumb-lines"></div>
+          </div>
+        </div>
+        <div class="game-card-body">
+          <div class="game-card-genre">Action RPG</div>
+          <h3 class="game-card-title">Abyss Protocol</h3>
+          <p class="game-card-desc">Descend into a fractured realm where ancient gods and machine intelligences wage eternal war. Navigate branching narratives that reshape the world around you.</p>
+          <div class="game-card-footer">
+            <span class="game-badge released">Released</span>
+            <span class="game-card-arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="game-card fade-in fade-in-delay-1">
+        <div class="game-card-thumb">
+          <div class="game-card-thumb-inner thumb-ember">
+            <div class="thumb-art"></div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.4" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+              <path d="M200 30 L220 80 L270 80 L230 110 L250 160 L200 130 L150 160 L170 110 L130 80 L180 80 Z" stroke="#ff6b2b" stroke-width="1.2" fill="rgba(255,107,43,0.07)"/>
+              <circle cx="200" cy="100" r="60" stroke="#ff6b2b" stroke-width="0.6" opacity="0.3" stroke-dasharray="4 6"/>
+              <path d="M200 80 C210 90 215 100 200 115 C185 100 190 90 200 80Z" fill="rgba(255,180,50,0.2)" stroke="#ffaa00" stroke-width="1"/>
+            </svg>
+            <div class="thumb-lines"></div>
+          </div>
+        </div>
+        <div class="game-card-body">
+          <div class="game-card-genre">Strategy</div>
+          <h3 class="game-card-title">Ember Throne</h3>
+          <p class="game-card-desc">Command dragon riders in a continent-spanning conflict. Every decision carries the weight of kingdoms as political intrigue meets tactical warfare.</p>
+          <div class="game-card-footer">
+            <span class="game-badge released">Released</span>
+            <span class="game-card-arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="game-card fade-in fade-in-delay-2">
+        <div class="game-card-thumb">
+          <div class="game-card-thumb-inner thumb-void">
+            <div class="thumb-art"></div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.35" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+              <rect x="150" y="70" width="100" height="85" rx="4" stroke="#a060ff" stroke-width="1" fill="rgba(100,50,255,0.06)"/>
+              <line x1="150" y1="95" x2="250" y2="95" stroke="#a060ff" stroke-width="0.6" opacity="0.5"/>
+              <line x1="150" y1="120" x2="250" y2="120" stroke="#a060ff" stroke-width="0.6" opacity="0.5"/>
+              <circle cx="200" cy="155" r="4" fill="#a060ff" opacity="0.6"/>
+              <path d="M80 40 L160 112 M320 40 L240 112 M80 185 L160 113 M320 185 L240 113" stroke="#6432ff" stroke-width="0.5" opacity="0.3"/>
+            </svg>
+            <div class="thumb-lines"></div>
+          </div>
+        </div>
+        <div class="game-card-body">
+          <div class="game-card-genre">Sci-Fi Horror</div>
+          <h3 class="game-card-title">Void Index</h3>
+          <p class="game-card-desc">Survive a derelict deep-space station haunted by something that shouldn't exist. A psychological horror experience built on dread, not jump scares.</p>
+          <div class="game-card-footer">
+            <span class="game-badge coming">Coming Soon</span>
+            <span class="game-card-arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT PREVIEW ──────────────────────────────────────────────────────── -->
+<section class="about-preview" aria-labelledby="about-preview-heading">
+  <div class="container">
+    <div class="about-preview-grid">
+      <div class="about-visual fade-in">
+        <div class="about-visual-main">
+          <div class="about-visual-art"></div>
+          <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.2" viewBox="0 0 460 460" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+            <circle cx="230" cy="230" r="180" stroke="#00ff9c" stroke-width="0.8" stroke-dasharray="8 12"/>
+            <circle cx="230" cy="230" r="120" stroke="#00ff9c" stroke-width="0.5" stroke-dasharray="4 8"/>
+            <polygon points="230,80 350,160 350,300 230,380 110,300 110,160" stroke="#00ff9c" stroke-width="1" fill="none"/>
+            <circle cx="230" cy="230" r="30" fill="rgba(0,255,156,0.08)" stroke="#00ff9c" stroke-width="1.5"/>
+            <path d="M230 80 L230 380 M110 160 L350 300 M350 160 L110 300" stroke="#00ff9c" stroke-width="0.4" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="about-visual-badge">
+          <div class="num">2018</div>
+          <div class="lbl">Founded</div>
+        </div>
+      </div>
+      <div class="fade-in fade-in-delay-1">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title" id="about-preview-heading">Born from <span>Passion</span>, Built for Legacy</h2>
+        <p class="section-subtitle" style="margin-bottom:1.5rem">
+          Venom Core was founded by a team of obsessive game-makers who believed that interactive storytelling could rival any other art form. Seven years later, we're proving it every day.
+        </p>
+        <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.8;margin-bottom:2rem">
+          From our studio in the Pacific Northwest, we combine the rigour of AAA production with the creative freedom of independent development. Every game we ship is a statement — that craft matters, stories matter, and players deserve better.
+        </p>
+        <a href="/about.html" class="btn btn-outline">Discover Our Story →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ───────────────────────────────────────────────────────────── -->
+<section id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title" id="services-heading">Our <span>Services</span></h2>
+      <p class="section-subtitle">Full-spectrum game development — from concept to launch and beyond.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon" aria-hidden="true">🎮</div>
+        <h3 class="service-title">Game Development</h3>
+        <p class="service-desc">End-to-end development across PC, console, and mobile. Unreal Engine 5, Unity, and custom engine expertise.</p>
+      </div>
+      <div class="service-card fade-in fade-in-delay-1">
+        <div class="service-icon" aria-hidden="true">✦</div>
+        <h3 class="service-title">Narrative Design</h3>
+        <p class="service-desc">Deep worldbuilding, branching dialogue systems, and emotionally resonant character arcs that players remember forever.</p>
+      </div>
+      <div class="service-card fade-in fade-in-delay-2">
+        <div class="service-icon" aria-hidden="true">🎨</div>
+        <h3 class="service-title">Art Direction</h3>
+        <p class="service-desc">Concept art, environment design, character modeling, and the visual language that defines a world's identity.</p>
+      </div>
+      <div class="service-card fade-in fade-in-delay-3">
+        <div class="service-icon" aria-hidden="true">🔊</div>
+        <h3 class="service-title">Audio & Score</h3>
+        <p class="service-desc">Orchestral scores, adaptive audio systems, and sound design that transforms atmosphere into immersion.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon" aria-hidden="true">⚙️</div>
+        <h3 class="service-title">Serious Games</h3>
+        <p class="service-desc">Training simulations, educational experiences, and interactive media for enterprise and institutional clients.</p>
+      </div>
+      <div class="service-card fade-in fade-in-delay-1">
+        <div class="service-icon" aria-hidden="true">🚀</div>
+        <h3 class="service-title">Co-Development</h3>
+        <p class="service-desc">Embedded team augmentation and co-development partnerships with studios that need expert reinforcement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ────────────────────────────────────────────────────────────────── -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Let's Build</span>
+      <h2 class="cta-heading" id="cta-heading">Ready to <span style="color:var(--accent-green)">Make</span> Something?</h2>
+      <p class="cta-sub">Whether you have a fully-formed vision or a spark of an idea — we want to hear it. Let's create the next great game together.</p>
+      <div class="cta-buttons">
+        <a href="/contact.html" class="btn btn-primary">Start a Project</a>
+        <a href="/about.html" class="btn btn-ghost">Meet the Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="logo-icon">VC</span>
+          Venom&nbsp;<span>Core</span>
+        </a>
+        <p>Award-winning game studio crafting immersive worlds and unforgettable stories since 2018.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="#games">Our Games</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="/contact.html">Contact Us</a></li>
+          <li><a href="/contact.html">Careers</a></li>
+          <li><a href="/contact.html">Press Kit</a></li>
+          <li><a href="/contact.html">Partnerships</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/privacy.html">Cookie Policy</a></li>
+          <li><a href="/privacy.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Venom Core Studio. All rights reserved.</p>
+      <div class="footer-socials" aria-label="Social media links">
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="Discord">⬡</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Instagram">◎</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
