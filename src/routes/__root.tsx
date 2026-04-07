@@ -16,6 +16,10 @@ export const Route = createRootRoute({
       {
         title: 'Application Name',
       },
+       {
+      name: 'google-site-verification',
+      content: 'lwkYQS4O-f948Ew5pdECSVz5Hk9VELDY5EZ4Pxlqw3U',
+    },
     ],
   }),
   shellComponent: RootDocument,
